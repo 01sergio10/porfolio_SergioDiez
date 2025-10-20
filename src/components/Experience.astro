@@ -1,0 +1,40 @@
+---
+
+import ExperienceItem from './ExperienceItem.astro';
+
+const EXPERIENCE = [
+  {
+    date: "05/2024 - 05/2025",
+    title: "Agente en Competencias Digitales",
+    company: "Delegación del Gobierno de Madrid",
+    description: [
+      "Desarrollé y optimicé aplicaciones internas usando Symfony (PHP, HTML5, CSS3, JavaScript) y gestioné bases de datos MySQL para mejorar la eficiencia de varios departamentos.",
+      "También desarrollé aplicaciones en Access con VBA para la automatización de procesos internos, aumentando la productividad.",
+      "Configuré y maqueté equipos informáticos para el uso diario de los trabajadores."
+    ]
+  },
+  {
+    date: "09/2023 - 12/2023",
+    title: "Programador Full-Stack",
+    company: "Segundo Plano Producción Audiovisual y Soluciones Informáticas",
+    description: [
+      "Contribuí al desarrollo del backoffice de la empresa con Symfony 7.",
+      "Implementé módulos funcionales con enfoque en escalabilidad.",
+      "Gestioné bases de datos MySQL asegurando la integridad de la información.",
+      "Aporté en el diseño orientado a la usabilidad."
+    ],
+  },
+]
+
+---
+
+<ol class="relative border-s border-gray-200 ml-3">
+  {
+    EXPERIENCE.map(experience => 
+      <li class="mb-10 ms-4">
+        <ExperienceItem {...experience}></ExperienceItem>
+      </li>
+    )
+  }
+</ol>
+

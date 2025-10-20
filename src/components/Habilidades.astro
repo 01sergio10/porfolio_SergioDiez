@@ -1,0 +1,41 @@
+---
+
+import SkillPill from '../components/SkillPill.astro';
+import HtmlIcon from '../components/icons/Html.astro';
+import CssIcon from '../components/icons/Css.astro';
+import JavaScriptIcon from '../components/icons/JavaScript.astro';
+import BootstrapIcon from '../components/icons/Bootstrap.astro';
+import TailwindIcon from '../components/icons/TailwindCSS.astro';
+import JQueryIcon from '../components/icons/JQuery.astro';
+import AstroIcon from '../components/icons/AstroIcon.astro';
+
+---
+
+<article class="flex flex-col">
+  <h3 class="flex flex-row text-xl font-semibold text-yellow-200/80 mb-2">Frontend</h3>
+  <div class="flex flex-row gap-x-2">
+    <SkillPill>
+      <HtmlIcon class="size-4 md:size-6"/>
+    </SkillPill>
+    <SkillPill>
+      <CssIcon class="size-4 md:size-6"/>
+    </SkillPill>
+    <SkillPill>
+      <JavaScriptIcon class="size-4 md:size-6"/>
+    </SkillPill>
+    <SkillPill>
+      <BootstrapIcon class="size-4 md:size-6"/>
+    </SkillPill>
+    <SkillPill>
+      <TailwindIcon class="size-4 md:size-6"/>
+    </SkillPill>
+    <SkillPill>
+      <JQueryIcon class="size-4 md:size-6"/>
+    </SkillPill>
+    <SkillPill>
+      <AstroIcon class="size-4 md:size-6"/>
+    </SkillPill>
+  </div>
+  <h3 class="text-xl font-semibold text-yellow-200/80 mb-2">Backend</h3>
+  <h3 class="text-xl font-semibold text-yellow-200/80 mb-2">Otras</h3>
+</article>

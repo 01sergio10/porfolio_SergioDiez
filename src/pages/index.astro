@@ -1,11 +1,102 @@
 ---
+import AboutMe from '@/components/AboutMe.astro';
+import Badge from '@/components/Badge.astro';
+import BriefcaseIcon from '@/components/icons/Briefcase.astro';
+import CodeIcon from '@/components/icons/Code.astro';
+import Experience from '@/components/Experience.astro';
+import GitHubIcon from '@/components/icons/GitHub.astro';
+import GmailIcon from '@/components/icons/Gmail.astro';
+import Habilidades from '@/components/Habilidades.astro';
+import Layout from '@/layouts/Layout.astro';
+import LinkedInIcon from '@/components/icons/LinkedIn.astro';
+import ProfileCheckIcon from '@/components/icons/ProfileCheck.astro';
+import Projects from '@/components/Projects.astro';
+import SectionContainer from '@/components/SectionContainer.astro';
+import SocialPill from '@/components/SocialPill.astro';
+import Hero from '@/components/Hero.astro';
+import TitleSection from '@/components/TitleSection.astro';
 import Welcome from '../components/Welcome.astro';
-import Layout from '../layouts/Layout.astro';
-
-// Welcome to Astro! Wondering what to do next? Check out the Astro documentation at https://docs.astro.build
-// Don't want to use any of this? Delete everything in this file, the `assets`, `components`, and `layouts` directories, and start fresh.
 ---
 
-<Layout>
-	<Welcome />
+<Layout 
+	title="Porfolio de midudev - Desarrollador y Programador web con 15 años de experiencia"
+	description="Contrata a midudev para crear tu aplicación web o móvil. Desarrollador Web y Creador de Contenido. Especializado en crear aplicaciones únicas.">
+	<main class="px-4">
+		<SectionContainer class="py-44 pb-32">
+			<Hero>
+				<slot />
+			</Hero>
+			<!-- <img class="rounded-full size-12 mb-4" src="" alt="Foto Sergio Diez">
+			<h1 class="text-white text-3xl md:text-4xl lg:text:5xl font-bold flex flex-row gap-x-4 pb-6 lg:pb-10">
+				Hola! Soy Sergio Díez 
+				<div class="flex justify-center items-center">
+					<a 
+					href="https://www.linkedin.com/in/sergio-d%C3%ADez-mart%C3%ADnez/"
+					target="_blank"
+					rel="noopener"
+					class="flex justify-center items-center hover:scale-105 transition">
+						<Badge>Disponible para trabajar</Badge>
+					</a>
+				</div>
+			</h1>
+			<h2 class="text-xl lg:text-2xl text-wrap max-w-[700px]">
+				<span class="text-blue-300/90">Desarrollador Web</span> con
+				<span class="text-yellow-200/90"> más de un año de experiencia laboral</span> en
+				<span class="font-semibold text-orange-200/80"> JavaScript</span>,
+				<span class="font-semibold text-[#B0B3D6]/80"> PHP</span> y
+				<span class="font-semibold text-cyan-300/80"> Symfony</span>.
+				<span class="opacity-95"> De Madrid, España.</span>
+				<span class="opacity-80"> Especializado en crear soluciones prácticas y bien estructuradas.</span>
+			</h2>
+
+			<nav class="flex gap-4 mt-8 flex-wrap">
+				<SocialPill href="https://www.linkedin.com/in/sergio-d%C3%ADez-mart%C3%ADnez/">
+					<LinkedInIcon class="size-4 md:size-6"/>
+					LinkedIn
+				</SocialPill>
+				<SocialPill href="https://github.com/01sergio10">
+					<GitHubIcon class="size-4 md:size-6"/>
+					GitHub
+				</SocialPill>
+				<SocialPill href="mailto:xsergio010@gmail.com">
+					<GmailIcon class="size-4 md:size-6"/>
+					xsergio010@gmail.com
+				</SocialPill>
+			</nav> -->
+		</SectionContainer>
+		<SectionContainer id="experiencia">
+			<!-- <h2 class="text-3xl font-semibold mb-6 flex gap-x-3 items-center"> -->
+			<TitleSection>
+				<BriefcaseIcon class="size-7"/>
+				Experiencia Laboral
+			<!-- </h2> -->
+			</TitleSection>
+			<Experience />
+		</SectionContainer>
+		<!-- <SectionContainer id="proyectos">
+			<h2 class="text-3xl font-semibold mb-6 flex gap-x-3 items-center">
+				<CodeIcon class="size-7"/>
+				Proyectos
+			</h2>
+			<Projects />
+		</SectionContainer> -->
+		<SectionContainer id="tecnologias">
+			<!-- <h2 class="text-3xl font-semibold mb-6 flex gap-x-3 items-center"> -->
+			<TitleSection>
+				<CodeIcon class="size-7"/>
+				Tecnologías
+			<!-- </h2> -->
+			</TitleSection>
+			<Habilidades />
+		</SectionContainer>
+		<SectionContainer id="sobre-mi">
+			<!-- <h2 class="text-3xl font-semibold mb-6 flex gap-x-3 items-center"> -->
+			<TitleSection>
+				<ProfileCheckIcon class="size-7"/>
+				Sobre mí
+			<!-- </h2> -->
+			</TitleSection>
+			<AboutMe />
+		</SectionContainer>
+	</main>
 </Layout>

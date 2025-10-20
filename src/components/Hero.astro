@@ -1,0 +1,49 @@
+---
+const personalImageAlt = "Sergio Díez"
+import Badge from "@/components/Badge.astro"
+import LinkedInIcon from "@/components/icons/LinkedIn.astro"
+import MailIcon from "@/components/icons/Gmail.astro"
+import SocialPill from "@/components/SocialPill.astro"
+---
+
+<div class="max-w-xl">
+  <div class="flex gap-4 mb-4">
+    <img
+      class="rounded-full shadow-lg size-16"
+      src=""
+      alt={personalImageAlt}
+    />
+    <a
+      href="https://www.linkedin.com/in/sergio-d%C3%ADez-mart%C3%ADnez/"
+      target="_blank"
+      rel="noopener"
+      class="flex items-center transition md:justify-center md:hover:scale-105"
+    >
+      <Badge>Disponible para trabajar</Badge>
+    </a>
+  </div>
+  <h1
+    class="text-4xl font-bold tracking-tight text-gray-800 sm:text-5xl dark:text-white"
+  >
+    Hola! Soy Sergio Díez
+  </h1>
+  <h2 class="text-xl lg:text-2xl text-wrap max-w-[700px]">
+      <span class="text-blue-300/90">Desarrollador Web</span> con
+      <span class="text-yellow-200/90"> más de un año de experiencia laboral</span> en
+      <span class="font-semibold text-orange-200/80"> JavaScript</span>,
+      <span class="font-semibold text-[#B0B3D6]/80"> PHP</span> y
+      <span class="font-semibold text-cyan-300/80"> Symfony</span>.
+      <span class="opacity-95"> De Madrid, España.</span>
+      <span class="opacity-80"> Especializado en crear soluciones prácticas y bien estructuradas.</span>
+    </h2>
+  <nav class="flex flex-wrap gap-4 mt-8">
+    <SocialPill href="mailto:xsergio010@gmail.com">
+      <MailIcon class="size-4" />
+      Contáctame
+    </SocialPill>
+    <SocialPill href="https://www.linkedin.com/in/sergio-d%C3%ADez-mart%C3%ADnez/">
+      <LinkedInIcon class="size-4" />
+      LinkedIn
+    </SocialPill>
+  </nav>
+</div>
