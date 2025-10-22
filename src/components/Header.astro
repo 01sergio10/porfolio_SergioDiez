@@ -55,6 +55,8 @@ const navItems = [
       entries.forEach((entry) => {
         if (entry.isIntersecting) {
           navItems.forEach((item) => {
+            console.log("Item:" + item);
+            console.log("Entry target: " + entry.target.id)
             if (item.getAttribute("aria-label") == entry.target.id) {
               item.classList.add("text-blue-500")
             } else {
@@ -127,18 +129,3 @@ const navItems = [
   }
 
 </style>
-
-
-
-
-
-<!-- <header class="flex justify-center items-center py-5 w-full xl:w-[1120px] mx-auto">
-  <nav class="flex flex-row gap-x-10 opacity-80">
-    <a href="#top">Inicio</a>
-    <a href="/#experiencia">Experiencia</a>
-    <a href="/proyectos">Proyectos</a>
-    <a href="/#tecnologias">Tecnologías</a>
-    <a href="/#sobre-mi">Sobre Mí</a>
-    <a href="/contacto">Contacto</a>
-  </nav>
-</header> -->
