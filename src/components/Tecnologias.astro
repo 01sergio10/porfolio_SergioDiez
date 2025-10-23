@@ -1,0 +1,112 @@
+---
+
+import SkillPill from '../components/SkillPill.astro';
+import HtmlIcon from '../components/icons/Html.astro';
+import CssIcon from '../components/icons/Css.astro';
+import JavaScriptIcon from '../components/icons/JavaScript.astro';
+import BootstrapIcon from '../components/icons/Bootstrap.astro';
+import TailwindIcon from '../components/icons/TailwindCSS.astro';
+import JQueryIcon from '../components/icons/JQuery.astro';
+import AstroIcon from '../components/icons/AstroIcon.astro';
+import SassIcon from '../components/icons/Sass.astro';
+import PhpIcon from '../components/icons/Php.astro';
+import JavaIcon from '../components/icons/Java.astro';
+import VBAIcon from '../components/icons/VBA.astro';
+import SymfonyIcon from '../components/icons/Symfony.astro';
+import MySQLIcon from '../components/icons/MySQL.astro';
+import NodeJSIcon from '../components/icons/Nodejs.astro';
+import TypeScriptIcon from '../components/icons/TypeScript.astro';
+import PythonIcon from '../components/icons/Python.astro';
+import GitIcon from '../components/icons/Git.astro';
+import GitHubIcon from '@/components/icons/GitHub.astro';
+import DockerIcon from '@/components/icons/Docker.astro';
+import VSCodeIcon from '@/components/icons/VSCode.astro';
+import NpmIcon from '@/components/icons/Npm.astro';
+
+---
+
+<article class="grid grid-cols-2 gap-4">
+  <div>
+    <h3 class="text-xl font-semibold text-yellow-200/80 mb-2">Frontend</h3>
+    <div class="grid grid-cols-3 gap-4">
+      <SkillPill>
+        <HtmlIcon class="size-4 md:size-6"/>
+      </SkillPill>
+      <SkillPill>
+        <CssIcon class="size-4 md:size-6"/>
+      </SkillPill>
+      <SkillPill>
+        <JavaScriptIcon class="size-4 md:size-6"/>
+      </SkillPill>
+      <SkillPill>
+        <BootstrapIcon class="size-4 md:size-6"/>
+      </SkillPill>
+      <SkillPill>
+        <TailwindIcon class="size-4 md:size-6"/>
+      </SkillPill>
+      <SkillPill>
+        <JQueryIcon class="size-4 md:size-6"/>
+      </SkillPill>
+      <SkillPill>
+        <AstroIcon class="size-4 md:size-6"/>
+      </SkillPill>
+      <SkillPill>
+        <SassIcon class="size-4 md:size-6"/>
+      </SkillPill>
+    </div>
+  </div>
+  <div>
+    <h3 class="text-xl font-semibold text-yellow-200/80 mb-2">Backend</h3>
+    <div class="grid grid-cols-3 gap-4">
+      <SkillPill>
+        <PhpIcon class="size-4 md:size-6"/>
+      </SkillPill>
+      <SkillPill>
+        <JavaIcon class="size-4 md:size-6"/>
+      </SkillPill>
+      <SkillPill>
+        <VBAIcon class="size-4 md:size-6"/>
+      </SkillPill>
+      <SkillPill>
+        <SymfonyIcon class="size-4 md:size-6"/>
+      </SkillPill>
+      <SkillPill>
+        <MySQLIcon class="size-4 md:size-6"/>
+      </SkillPill>
+    </div>
+  </div>
+  <div>
+    <h3 class="text-xl font-semibold text-yellow-200/80 mb-2">Aprendiendo</h3>
+    <div class="grid grid-cols-3 gap-4">
+      <SkillPill>
+        <NodeJSIcon class="size-4 md:size-6"/>
+      </SkillPill>
+      <SkillPill>
+        <TypeScriptIcon class="size-4 md:size-6"/>
+      </SkillPill>
+      <SkillPill>
+        <PythonIcon class="size-4 md:size-6"/>
+      </SkillPill>
+    </div>
+  </div>
+  <div>
+    <h3 class="text-xl font-semibold text-yellow-200/80 mb-2">Herramientas</h3>
+    <div class="grid grid-cols-3 gap-4">
+      <SkillPill>
+        <GitIcon class="size-4 md:size-6"/>
+      </SkillPill>
+      <SkillPill>
+        <GitHubIcon class="size-4 md:size-6"/>
+      </SkillPill>
+      <SkillPill>
+        <DockerIcon class="size-4 md:size-6"/>
+      </SkillPill>
+      <SkillPill>
+        <VSCodeIcon class="size-4 md:size-6"/>
+      </SkillPill>
+      <SkillPill>
+        <NpmIcon class="size-4 md:size-6"/>
+      </SkillPill>
+    </div>
+  </div>
+</article>
